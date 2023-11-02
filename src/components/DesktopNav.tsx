@@ -1,6 +1,6 @@
 import logo from "../images/logo.svg";
 import { Button } from "@/components/ui/button";
-import DropdownMenu from "./DropdownMenu";
+/* import DropdownMenu from "./DropdownMenu"; */
 import iconCalendar from "../images/icon-calendar.svg";
 import { MenuContext } from "@/utils/contexts";
 
