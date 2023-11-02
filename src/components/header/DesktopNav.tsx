@@ -1,7 +1,7 @@
-import logo from "../images/logo.svg";
+import logo from "../../images/logo.svg";
 import { Button } from "@/components/ui/button";
 /* import DropdownMenu from "./DropdownMenu"; */
-import iconCalendar from "../images/icon-calendar.svg";
+import iconCalendar from "../../images/icon-calendar.svg";
 import { MenuContext } from "@/utils/contexts";
 
 export default function DesktopNav() {
