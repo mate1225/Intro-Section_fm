@@ -1,4 +1,5 @@
-/* import {
+//ui
+import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -6,25 +7,25 @@
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import DropdownMenuItem from "./DropdownMenuItem";
+//tsx
+import Features from "./Features";
+import Company from "./Company";
 
 export default function DropdownMenu(props: {
-  title1: string;
-  image: string;
-  item12: String;
+  title: string;
+  isItFutures: boolean;
 }) {
-  const { title1, image, item12 } = props;
   return (
     <>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className=" text-[0.875rem] font-medium  text-Medium_Grey hover:text-Black_Text">
-              {title1}
+              {props.title}
             </NavigationMenuTrigger>
             <NavigationMenuContent className=" bg-white p-6 ">
               <NavigationMenuLink className="flex ">
-                <DropdownMenuItem image={image} item12={item1} />
+                {props.isItFutures ? <Features /> : <Company />}
               </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -33,4 +34,3 @@ export default function DropdownMenu(props: {
     </>
   );
 }
- */

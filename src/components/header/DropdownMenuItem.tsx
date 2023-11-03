@@ -1,12 +1,12 @@
 export default function DropdownMenuItem(props: {
   image: string;
-  item1: string;
+  item: string;
 }) {
-  const { image, item1 } = props;
+  const { image, item } = props;
   return (
-    <>
+    <div className=" flex gap-2">
       <img src={image} />
-      <p>{item1}</p>
-    </>
+      <p>{item}</p>
+    </div>
   );
 }

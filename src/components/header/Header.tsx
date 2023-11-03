@@ -2,7 +2,7 @@ import DesktopNav from "./DesktopNav";
 
 export default function Header() {
   return (
-    <div className="  ">
+    <div className="">
       <DesktopNav />
     </div>
   );
