@@ -24,7 +24,7 @@ export default function DropdownMenu(props: {
               {props.title}
             </NavigationMenuTrigger>
             <NavigationMenuContent className=" bg-white p-6 ">
-              <NavigationMenuLink className="flex ">
+              <NavigationMenuLink>
                 {props.isItFutures ? <Features /> : <Company />}
               </NavigationMenuLink>
             </NavigationMenuContent>
