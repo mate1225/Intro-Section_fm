@@ -8,7 +8,7 @@ import planning from "../../images/icon-planning.svg";
 
 export default function Features() {
   return (
-    <div>
+    <div className=" flex flex-col gap-4">
       <DropdownMenuItem image={todo} item="Todo List" />
       <DropdownMenuItem image={calendar} item="Calendar" />
       <DropdownMenuItem image={reminders} item="Reminders" />
